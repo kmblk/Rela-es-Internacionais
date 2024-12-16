@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relações Internacionais - Atualizações em Tempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Para o mapa interativo -->
+    <script src="https://newsapi.org/v2/top-headlines?country=br&apiKey=API_KEY" async></script> <!-- API de Notícias -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Relações Internacionais</div>
+        <nav>
+            <ul>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#mapa">Mapa Interativo</a></li>
+                <li><a href="#batepapo">Bate-Papo</a></li>
+                <li><a href="#grafico">Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="intro">
+        <div class="container">
+            <h1>Bem-vindo ao Mundo das Relações Internacionais!</h1>
+            <p>Explore as interações globais em tempo real, incluindo notícias, mapas interativos, gráficos e discussões ao vivo.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section id="noticias">
+        <div class="container">
+            <h2>Últimas Notícias Globais</h2>
+            <div id="newsFeed">
+                <!-- Notícias serão carregadas aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Mapa Interativo -->
+    <section id="mapa">
+        <div class="container">
+            <h2>Mapa Interativo das Relações Internacionais</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Seção de Bate-Papo -->
+    <section id="batepapo">
+        <div class="container">
+            <h2>Entre na Sala de Bate-Papo</h2>
+            <div id="chatbox">
+                <div id="messages"></div>
+                <input type="text" id="chatInput" placeholder="Digite sua mensagem...">
+                <button id="sendMessage">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Gráficos -->
+    <section id="grafico">
+        <div class="container">
+            <h2>Gráficos Dinâmicos</h2>
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Relações Internacionais. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
